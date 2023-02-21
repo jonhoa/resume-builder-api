@@ -5,3 +5,18 @@ GET http://localhost:3000/people/all
 
 ###Show
 GET http://localhost:3000/people/1
+
+###Edit
+PATCH http://localhost:3000/people/1
+Content-Type: application/json
+
+{
+  "first_name": " ",
+  "last_name": " ",
+  "email": " ",
+  "phone": ,
+  "title": ,
+  "github": " ",
+  "linkedin": "",
+  "location": "Dallas"
+}

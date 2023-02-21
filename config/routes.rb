@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 get '/people/all' => 'people#index'
 get '/people/:id' => 'people#show'
+patch 'people/:id' => 'people#update'
 end
