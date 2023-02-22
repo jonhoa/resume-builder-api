@@ -1,24 +1,5 @@
-# README
+# RESUME API
+A resume builder developed in Rails utilizing MVC and routes. The goal is to develop a resume builder api framework that helps people's resumes pass high ATS standards enabling them a better chance at scoring interviews with real-life hiring manager.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#Features
+User can dynamically update their resume information and download their already generated resumes as a pdf.
