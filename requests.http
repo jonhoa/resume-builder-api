@@ -6,7 +6,7 @@ GET http://localhost:3000/people/all
 ###Show
 GET http://localhost:3000/people/1
 
-###Edit
+###Edit need to fix
 PATCH http://localhost:3000/people/1
 Content-Type: application/json
 
@@ -20,3 +20,7 @@ Content-Type: application/json
   "linkedin": "",
   "location": "Dallas"
 }
+
+###          SKILL
+### Index
+GET http://localhost:3000/skill/all

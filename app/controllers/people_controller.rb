@@ -3,13 +3,15 @@ class PeopleController < ApplicationController
     people = Person.all
     render json: people.as_json
   end
+
   def show
     people = Person.find_by(id: params[:id])
     render json: people.as_json
   end
+
   def update
     people = Person.find_by(id: params[:id])
-    people.update (
+    people.update(
       first_name: params[:first_name],
       last_name: params[:last_name],
       email: params[:email],
@@ -20,4 +22,5 @@ class PeopleController < ApplicationController
       location: params[:location]
     )
     render json: {message: "successully saved changes"}
+  end
 end
