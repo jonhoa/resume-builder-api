@@ -3,8 +3,8 @@ class CreateEducations < ActiveRecord::Migration[7.0]
     create_table :educations do |t|
       t.string :start
       t.string :end
-      t.string :job
-      t.string :company
+      t.string :degree
+      t.string :university
       t.text :details
 
       t.timestamps
