@@ -9,4 +9,6 @@ patch 'people/:id' => 'people#update'
 
 
 get '/skill/all' => 'skills#index'
+post '/skill/add' => 'skills#create'
+
 end
