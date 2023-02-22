@@ -1,12 +1,11 @@
-###                PERSON 
-
+###      ----     PERSON    -----
 ###Index
 GET http://localhost:3000/people/all
 
 ###Show
 GET http://localhost:3000/people/1
 
-###Edit need to fix
+###Edit
 PATCH http://localhost:3000/people/1
 Content-Type: application/json
 
@@ -14,14 +13,30 @@ Content-Type: application/json
   "first_name": "Jonathan",
   "last_name": "Hoarau",
   "email": "test@test.com",
-  "phone": 2424242424242,
+  "phone": 2424242,
   "title": "Software Engineer",
   "github": "github.com/jonhoa",
   "linkedin": "linkedin",
   "location": "Dallas"
 }
 
-###          SKILL
+### Create
+POST http://localhost:3000/people/add
+Content-Type: application/json 
+
+{
+  "first_name": "Johnny",
+  "last_name": "Bravo",
+  "email": "",
+  "phone": 22223,
+  "title": "",
+  "github": "",
+  "linkedin": "",
+  "location": ""
+}
+
+
+###        ----  SKILL  ----
 ### Index
 GET http://localhost:3000/skill/all
 
@@ -30,10 +45,85 @@ POST http://localhost:3000/skill/add
 Content-Type: application/json
 
 {
-  "name": "Github"
+  "name": "Git"
 }
 
 
-###        EDUCATION
+###    ----    EDUCATION    -----
 ###Index
 GET http://localhost:3000/education/all
+
+###Show
+GET http://localhost:3000/education/1
+
+### CREATE
+POST http://localhost:3000/education/add
+Content-Type: application/json
+
+{
+  "start": "",
+  "end": "",
+  "degree": "",
+  "university": "",
+  "details": ""
+}
+### Edit
+PATCH http://localhost:3000/education/edit/1
+Content-Type: application/json
+
+{
+  "start": "",
+  "end": "",
+  "degree": "",
+  "university": "",
+  "details": ""
+}
+
+
+###      ----- EXPERIENCES  -----
+### Index
+GET http://localhost:3000/experiences/all
+
+### Show
+GET http://localhost:3000/experiences/1
+
+### Create
+POST http://localhost:3000/experiences/add
+Content-Type: application/json
+
+{
+  "start": "",
+  "end": "",
+  "job": "",
+  "company": "",
+  "details": ""
+}
+
+### Edit
+PATCH http://localhost:3000/experiences/edit/1
+
+
+###      ----     PROJECT    ----
+### Index
+GET http://localhost:3000/projects/all
+
+### Show
+GET http://localhost:3000/projects/1
+
+### Create
+POST http://localhost:3000/projects/add
+Content-Type: application/json 
+
+{
+  "name": "",
+  "description": ""
+}
+
+### Edit
+PATCH http://localhost:3000/projects/edit/1
+Content-Type: application/json 
+
+{
+  "name": "",
+  "description": ""
+}

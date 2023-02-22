@@ -1,6 +1,6 @@
 class PeopleController < ApplicationController
   def index
-    people = Person.all
+    people = Person.order(:id)
     render json: people.as_json
   end
 
@@ -21,6 +21,21 @@ class PeopleController < ApplicationController
       linkedin: params[:linkedin],
       location: params[:location]
     )
+    render json: {message: "successully saved changes"}
+  end
+  
+  def create
+    people = Person.create(
+      first_name: params[:first_name],
+      last_name: params[:last_name],
+      email: params[:email],
+      phone: params[:phone],
+      title: params[:title],
+      github: params[:github],
+      linkedin: params[:linkedin],
+      location: params[:location]
+    )
+    people.save
     render json: {message: "successully saved changes"}
   end
 end

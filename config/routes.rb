@@ -5,13 +5,18 @@ Rails.application.routes.draw do
   # root "articles#index"
 get '/people/all' => 'people#index'
 get '/people/:id' => 'people#show'
-patch 'people/:id' => 'people#update'
+patch '/people/:id' => 'people#update'
+post '/people/add' => 'people#create'
 
 
 get '/skill/all' => 'skills#index'
+get '/skill/:id' => 'skills#show'
 post '/skill/add' => 'skills#create'
 
 
 get '/education/all' => 'educations#index'
+get '/education/:id' => 'educations#show'
+patch '/education/edit/:id' => 'educations#edit'
+post '/education/add' => 'educations#create'
 
 end
