@@ -1,4 +1,4 @@
-###Person 
+###                PERSON 
 
 ###Index
 GET http://localhost:3000/people/all
@@ -11,13 +11,13 @@ PATCH http://localhost:3000/people/1
 Content-Type: application/json
 
 {
-  "first_name": " ",
-  "last_name": " ",
-  "email": " ",
-  "phone": ,
-  "title": ,
-  "github": " ",
-  "linkedin": "",
+  "first_name": "Jonathan",
+  "last_name": "Hoarau",
+  "email": "test@test.com",
+  "phone": 2424242424242,
+  "title": "Software Engineer",
+  "github": "github.com/jonhoa",
+  "linkedin": "linkedin",
   "location": "Dallas"
 }
 
@@ -32,3 +32,8 @@ Content-Type: application/json
 {
   "name": "Github"
 }
+
+
+###        EDUCATION
+###Index
+GET http://localhost:3000/education/all
