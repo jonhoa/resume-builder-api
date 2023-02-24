@@ -16,13 +16,13 @@ post '/skill/add' => 'skills#create'
 
 get '/education/all' => 'educations#index'
 get '/education/:id' => 'educations#show'
-patch '/education/edit/:id' => 'educations#edit'
+patch '/education/edit/:id' => 'educations#update'
 post '/education/add' => 'educations#create'
 
 
 get '/experiences/all' => 'experiences#index'
 get '/experiences/:id' => 'experiences#show'
-patch '/experiences/edit/:id' => 'experiences#edit'
+patch '/experiences/edit/:id' => 'experiences#update'
 post '/experiences/add' => 'experiences#create'
 
 end
