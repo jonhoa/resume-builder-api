@@ -19,4 +19,10 @@ get '/education/:id' => 'educations#show'
 patch '/education/edit/:id' => 'educations#edit'
 post '/education/add' => 'educations#create'
 
+
+get '/experiences/all' => 'experiences#index'
+get '/experiences/:id' => 'experiences#show'
+patch '/experiences/edit/:id' => 'experiences#edit'
+post '/experiences/add' => 'experiences#create'
+
 end
