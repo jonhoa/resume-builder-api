@@ -14,7 +14,8 @@ class ExperiencesController < ApplicationController
       start: params[:start],
       end: params[:end],
       company: params[:company],
-      description: params[:description]
+      job: params[:job],
+      details: params[:details]
     )
     experience.save
     render json: {message: "Successfully created"}
@@ -26,7 +27,8 @@ class ExperiencesController < ApplicationController
       start: params[:start],
       end: params[:end],
       company: params[:company],
-      description: params[:description]
+      job: params[:job],
+      details: params[:details]
     )
     experience.save
     render json: experience.as_json

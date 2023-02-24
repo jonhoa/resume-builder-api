@@ -92,16 +92,24 @@ POST http://localhost:3000/experiences/add
 Content-Type: application/json
 
 {
-  "start": "",
-  "end": "",
-  "job": "",
+  "start": "2",
+  "end": "2",
+  "job": "e",
   "company": "",
   "details": ""
 }
 
 ### Edit
 PATCH http://localhost:3000/experiences/edit/1
+Content-Type: application/json
 
+{
+  "start": "2",
+  "end": "2",
+  "job": "e",
+  "company": "",
+  "details": ""
+}
 
 ###      ----     PROJECT    ----
 ### Index
@@ -124,6 +132,6 @@ PATCH http://localhost:3000/projects/edit/1
 Content-Type: application/json 
 
 {
-  "name": "",
+  "name": "Big project",
   "description": ""
 }

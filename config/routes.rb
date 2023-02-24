@@ -25,4 +25,8 @@ get '/experiences/:id' => 'experiences#show'
 patch '/experiences/edit/:id' => 'experiences#update'
 post '/experiences/add' => 'experiences#create'
 
+get '/projects/all' => 'projects#index'
+get '/projects/:id' => 'projects#show'
+patch '/projects/edit/:id' => 'projects#update'
+post '/projects/add' => 'projects#create'
 end
